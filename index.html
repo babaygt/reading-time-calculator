@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reading Time Calculator</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="readingTimeCalculator">
+			<h1 class="readingTimeCalculator-title">Reading Time Calculator</h1>
+			<div class="readingTimeCalculator-speedSettings">
+				<label for="speed" class="readingTimeCalculator-speedLabel"
+					>Reading Speed:</label
+				>
+				<select id="speed" class="readingTimeCalculator-speedSelect">
+					<option value="slow">Slow (100 Words per Minute)</option>
+					<option value="average">Average (200 Words per Minute)</option>
+					<option value="fast">Fast (300 Words per Minute)</option>
+				</select>
+			</div>
+			<div class="readingTimeCalculator-resultBox">
+				<p class="readingTimeCalculator-totalWords">
+					Total Words: <span id="totalWords">--</span>
+				</p>
+				<p class="readingTimeCalculator-readingTime">
+					Reading Time: <span id="readingTime">--</span>
+				</p>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+{
+	"manifest_version": 3,
+	"name": "Reading Time Calculator",
+	"version": "0.1",
+	"description": "Calculates the reading time of a page with presets for different reading speeds.",
+	"permissions": ["activeTab", "scripting"],
+	"background": {
+		"service_worker": "script.js"
+	},
+	"action": {
+		"default_popup": "index.html",
+		"default_icon": {
+			"16": "assets/icons/icon-16.png",
+			"32": "assets/icons/icon-32.png",
+			"128": "assets/icons/icon-128.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["script.js"]
+		}
+	]
+}
